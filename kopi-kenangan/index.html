@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Kopi Kenangan</title>
+</head>
+
+<body>
+    <!-- circle -->
+    <div class="circle"></div>
+
+    <!-- navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="../img/logo.png" alt=""></a>
+
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- content start -->
+    <section>
+        <div class="content">
+            <h2>Bukan hanya sekedar kopi <br> Ini <i>Kopi <span style="color: rgb(153, 35, 35);">Kenangan</span>.</i>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus incidunt placeat
+                repellendus. Deserunt dolore adipisci non inventore eaque soluta.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <!-- imgBox -->
+        <div class="imgBox">
+            <img src="../img/kopi1.png" class="kenangan">
+        </div>
+
+        <!-- thumb -->
+        <ul class="thumb">
+            <li><img src="../img/thumb1.png" onclick="imgSlide('../img/kopi1.png')"></li>
+            <li><img src="../img/thumb2.png" onclick="imgSlide('../img/kopi2.png')"></li>
+            <li><img src="../img/thumb3.png" onclick="imgSlide('../img/kopi3.png')"></li>
+        </ul>
+
+        <!-- socmed -->
+        <ul class="socmed">
+            <li><a href="#"><img src="../img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="../img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="../img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <!-- content end -->
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+
+        function imgSlide(anything) {
+            document.querySelector('.kenangan').src = anything;
+        }
+    </script>
+</body>
+
+</html>

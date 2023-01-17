@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: rgb(39, 39, 39);
+  padding: 0 1rem;
+}
+
+.navbar .navbar-nav a {
+  padding-bottom: 0.5rem;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  color: black;
+}
+
+section {
+  align-items: center;
+  margin: 0rem 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.imgBox img {
+  transform: rotate(-20deg);
+  max-width: 25rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+section .content a {
+  margin-top: 2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  color: #ffff;
+  background-color: brown;
+  transition: 0.5s;
+}
+
+section .content a:hover {
+  background-color: rgb(129, 32, 32);
+}
+
+.thumb {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.thumb li {
+  transition: 0.5s linear;
+}
+
+.thumb li:hover {
+  transform: translateY(-10px);
+}
+
+.thumb img {
+  transform: rotate(20deg);
+  width: 50%;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9b3131;
+  clip-path: circle(35rem at right 800px);
+}
+
+.socmed {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socmed li a {
+  display: inline-block;
+  margin: 0.5rem 0;
+  filter: invert(1);
+}
+
+.socmed li a img {
+  max-width: 70%;
+}
