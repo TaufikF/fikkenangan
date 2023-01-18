@@ -43,8 +43,9 @@
         <div class="content">
             <h2>Bukan hanya sekedar kopi <br> Ini <i>Kopi <span style="color: rgb(153, 35, 35);">Kenangan</span>.</i>
             </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus incidunt placeat
-                repellendus. Deserunt dolore adipisci non inventore eaque soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore minima asperiores, recusandae commodi
+                vel natus? Perspiciatis ut ipsum aspernatur eveniet iste perferendis repellat doloribus maxime minus,
+                cum reprehenderit exercitationem!</p>
             <a href="#">Learn More</a>
         </div>
 
@@ -55,25 +56,28 @@
 
         <!-- thumb -->
         <ul class="thumb">
-            <li><img src="img/thumb1.png" onclick="imgSlide('img/kopi1.png')"></li>
-            <li><img src="img/thumb2.png" onclick="imgSlide('img/kopi2.png')"></li>
-            <li><img src="img/thumb3.png" onclick="imgSlide('img/kopi3.png')"></li>
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/kopi1.png')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/kopi2.png')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/kopi3.png')"></li>
         </ul>
 
         <!-- socmed -->
         <ul class="socmed">
             <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/fiikfadillah/" target="_blank"><img src="img/instagram.png"
+                        alt=""></a></li>
             <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
         </ul>
     </section>
     <!-- content end -->
 
+    <!-- footnote -->
+    <!-- <footer>
+        <p>CopyRight ' FiikFadillah</p>
+    </footer> -->
     <!-- Feather Icons -->
     <script>
-        feather.replace();
-
-        function imgSlide(anything) {
+        function imgSlider(anything) {
             document.querySelector('.kenangan').src = anything;
         }
     </script>

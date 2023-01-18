@@ -127,3 +127,17 @@ section .content a:hover {
 .socmed li a img {
   max-width: 70%;
 }
+
+/* footer {
+  background-color: black;
+  position: relative;
+  top: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+footer p {
+  color: #ffff;
+} */
